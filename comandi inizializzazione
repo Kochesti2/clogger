@@ -1,0 +1,16 @@
+sudo apt update
+sudo apt install libpq-dev
+
+make clean
+make
+
+./clogger
+
+configura cron:
+chmod +x install_cron.sh
+apri install_cron.sh e metti corretto PROJECT_DIR
+lancia con ./install_cron.sh
+
+
+//g++ clogger.cpp -I/usr/include/postgresql -lpq -o clogger
+
